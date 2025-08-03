@@ -15,7 +15,7 @@ This solution is a contract management system divided into two parts:
 - ASP.NET Core 8  
 - AutoMapper  
 - Entity Framework Core  
-- SQL Server / PostgreSQL (depending on configuration)
+- SQL Server / PostgreSQL (currently InMemory)
 
 ### Frontend (Vue)
 
@@ -31,21 +31,16 @@ This solution is a contract management system divided into two parts:
 2. Open Visual Studio 2022   
 2. Start Debug   
 
-```csharp
-builder.Services.AddAutoMapper(typeof(ContractProfile));
-Run migrations if using EF Core:
-
 ---
-### ⚙️ Backend Run
+### ⚙️ Frontend Run
 
 1. Navigate to the `/Web` folder  
 2. Open Visual Code   
 3. Open terminal 
-4. Execute npm install
-5. Execute npm run dev  
+4. Execute `npm install`
+5. Execute `npm run dev`  
 
 ---
-
 ## ✅ TODO
 
 - [ ] Authentication
